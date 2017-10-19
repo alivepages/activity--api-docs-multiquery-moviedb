@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Intro to Promises/APIs</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+      <link rel="stylesheet" href="./css/styles.css">
+   </head>
+   <body>
+      <div id="app-container">
+        <!--
+        Get the quantity of cast members on the credits of the 2nd best rated movie.
+
+        1. Query for the top rated movie
+        https://api.themoviedb.org/3/movie/top_rated
+
+        2. Query for the credits (using the best rated movie id)
+        https://api.themoviedb.org/3/movie/{movie_id}/credits
+        -->
+        <h1>2nd Top Rated Movie</h1>
+        <p>Data provided by <strong>The Movie Database API</strong><br/><a href="https://www.themoviedb.org/">https://www.themoviedb.org/</a></p>
+        <hr/>
+        <h4 class="movie-title">Movie: <mark>?</mark> </h4>
+        <h5 class="cast-count">Cast #: <mark>?</mark> </h5>
+      </div>
+
+      <!-- ADD Promise Library! -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/superagent/3.6.0/superagent.min.js"> </script>
+      <script src="./js/app.js"></script>
+   </body>
+</html>
